@@ -19,4 +19,22 @@
         <maintainerurl>http://www.bestproject.pl</maintainerurl>
         <targetplatform name="joomla" version="3.[0123456789]"/>
     </update>
+    <update>
+        <name>BP Analytics</name>
+        <description>BP Analytics system plugin</description>
+        <element>plg_system_bpanalytics</element>
+        <type>plugin</type>
+        <version>1.0.1</version>
+        <client>0</client>
+        <infourl title="Changelog">https://github.com/bestproject/plg_system_bpanalytics/blob/master/README.md</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/bestproject/plg_system_bpanalytics/archive/v1.0.1.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Artur Stępień</maintainer>
+        <maintainerurl>http://www.bestproject.pl</maintainerurl>
+        <targetplatform name="joomla" version="3.[0123456789]"/>
+    </update>
 </updates>

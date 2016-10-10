@@ -113,7 +113,8 @@ class plgSystemBPAnalytics extends JPlugin
 		}
 
 		// Include custom code if exists
-		if( !empty($this->params->get('custom_code','')) ) {
+		$custom_code = $this->params->get('custom_code','');
+		if( !empty($custom_code) ) {
 			$code.= "\n// Custom code\n";
 			$code.= "{$this->params->get('custom_code','')}\n";
 		}
@@ -122,7 +123,8 @@ class plgSystemBPAnalytics extends JPlugin
 		$code.=  $code_pageview;
 		
 		// Include hash URLs tracking (eg. #contact)
-		if( !empty($this->params->get('trackhash',0)) ) {
+		$trackhash = $this->params->get('trackhash',0);
+		if( !empty($trackhash) ) {
 			JHTML::_('jquery.framework');
 			$code.= "\n\n// Single Page Application support\n";
 			$code.= "jQuery(document).ready(function($){\n";
@@ -138,7 +140,8 @@ class plgSystemBPAnalytics extends JPlugin
 		}
 
 		// Include buttons click tracking
-		if( !empty($this->params->get('trackbuttonclicks',0)) ) {
+		$trackbuttonclicks = $this->params->get('trackbuttonclicks',0);
+		if( !empty($trackbuttonclicks) ) {
 			JHTML::_('jquery.framework');
 			$code.= "\n\n// Buttons click tracking\n";
 			$code.= "jQuery(document).ready(function($){\n";

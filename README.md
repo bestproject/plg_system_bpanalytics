@@ -11,5 +11,8 @@ A Joomla! Google Analytics plugin for versions 3+. For the plugin to work all yo
 - Update server
 
 ## Changelog
+###1.0.1
+- Fixed fatal error on some nasty servers.
+
 ###1.0.0
-Initial release
+- Initial release
